@@ -21,15 +21,15 @@ public class ProductManager {
     }
 
     public void add(Product product) throws Exception { //response request
-       //iş kuralları
+        //iş kuralları
         if (product.getUnitPrice() < 10) {
             throw new Exception("Ürün fiyatı 10 dan  küçük olamaz.");
         }
 
         productDao.add(product);
 
-        for (Logger logger : loggers
-             )
-            logger.log();
+
+
+
     }
 }
