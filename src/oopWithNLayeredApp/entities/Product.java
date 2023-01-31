@@ -1,7 +1,5 @@
 package oopWithNLayeredApp.entities;
 
-import java.util.logging.LogRecord;
-
 public class Product {
     private int id;
     private String name;
@@ -26,7 +24,7 @@ public class Product {
         this.id = id;
     }
 
-    public LogRecord getName() {
+    public String getName() {
         return name;
     }
 

@@ -5,7 +5,7 @@ import oopWithNLayeredApp.dataAccess.JdbcProductDao;
 import oopWithNLayeredApp.dataAccess.ProductDao;
 import oopWithNLayeredApp.entities.Product;
 
-import java.awt.*;
+
 import java.util.logging.Logger;
 
 public class ProductManager {
@@ -29,8 +29,7 @@ public class ProductManager {
         productDao.add(product);
 
         for (Logger logger : loggers
-             ) {
-            logger.log(product.getName());
-        }
+             )
+            logger.log();
     }
 }
